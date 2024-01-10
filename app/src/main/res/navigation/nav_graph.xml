@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.batonchiksuhoi.dummyjsonapp.fragments.LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_ProductsFragment"
+            app:destination="@id/ProductsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ProductsFragment"
+        android:name="com.batonchiksuhoi.dummyjsonapp.fragments.ProductsFragment"
+        tools:layout="@layout/fragment_products">
+
+        <action
+            android:id="@+id/action_ProductsFragment_to_ProductInfoFragment"
+            app:destination="@id/ProductInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ProductInfoFragment"
+        android:name="com.batonchiksuhoi.dummyjsonapp.fragments.ProductInfoFragment"
+        tools:layout="@layout/fragment_product_info">
+
+    </fragment>
+</navigation>
